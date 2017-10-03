@@ -302,14 +302,20 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .banner {
-	background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner-comp.jpg);
-	background-position: center center, center top;
+	background: url(../images/radlett.png), -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner-comp.jpg);
+	background-position: top 160px right, center center, center top;
 	background-repeat: no-repeat;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
-	background-size: cover;
+	background-size: 22% auto, cover, cover;
 	min-height: 750px;
+}
+
+@media (max-width: 1024px) {
+	.banner {
+		background-size: 0% auto, cover, cover;
+	}
 }
 .banner-btn {
 	opacity: 0.5;
@@ -482,7 +488,7 @@ h2.upcoming-litters{
 	text-align: center;
 }
 .person {
-	max-width: 270px;
+	/*max-width: 270px;*/
 	text-align: center;
 }
 .person-content {
@@ -587,11 +593,10 @@ h2.upcoming-litters{
 -------------------------------------------------------------------------------*/
 .quote h3 {
 	margin-top: 0;
+	margin-bottom: 35px;
 }
 .quote p {
 	color: #2d3033;
-	font-weight: 600;
-	text-transform: uppercase;
 }
 .quote .btn {
 	margin-top: 30px;
