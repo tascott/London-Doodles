@@ -302,7 +302,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .banner {
-	background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner.jpg);
+	background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/banner-comp.jpg);
 	background-position: center center, center top;
 	background-repeat: no-repeat;
 	-moz-background-size: cover;
@@ -366,8 +366,11 @@ ul li {
 	z-index: 100;
 	right: 0;
 	left: 0;
-	bottom: 1%;
+	bottom: 0%;
+	margin-bottom: 0px;
+	background: rgba(255, 255, 255, 0.7);
 	text-align: center;
+	padding: 10px;
 }
 @media (min-width: 1275px) {
 	.intro .quote-intro {
@@ -475,6 +478,9 @@ ul li {
 /* ------------------------------------------------------------------------------
 	 Teams
 -------------------------------------------------------------------------------*/
+h2.upcoming-litters{
+	text-align: center;
+}
 .person {
 	max-width: 270px;
 	text-align: center;
@@ -521,9 +527,16 @@ ul li {
 	 Testimonials
 -------------------------------------------------------------------------------*/
 .testimonials {
-	background-color: #e84545;
+	background: -webkit-linear-gradient(top,rgba(24,24,24,0.4),rgba(24,24,24,1)), url(../images/bench.jpg);
+	background-position: center center, center center;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
 	position: relative;
 	text-align: center;
+	margin-top: 15px;
 }
 .testimonials blockquote {
 	border: 0;
@@ -532,7 +545,7 @@ ul li {
 }
 .testimonials h1 {
 	color: #fff;
-	font: 23px "Source Sans Pro";
+	font-size: 23px;
 	font-weight: 300;
 }
 .testimonials p {
@@ -557,9 +570,15 @@ ul li {
 /* ------------------------------------------------------------------------------
 	Quote
 -------------------------------------------------------------------------------*/
+#previous {
+	padding-top: 15px;
+}
 
-#works .previous-litters {
 
+#previous h2.previous-litters {
+	font-size: 30px;
+	text-align: center;
+	padding-bottom: 15px;
 }
 
 
@@ -601,7 +620,7 @@ ul li {
 	margin-bottom: 20px;
 }
 .footer p {
-	color: rgba(255, 255, 255, 0.25);
+	color: white;
 }
 .footer a {
 	color: rgba(255, 255, 255, 0.50);
@@ -631,5 +650,23 @@ ul li {
 	color: #e84545;
 	font-size: 11px;
 	margin: 0 2px;
+}
+
+
+
+/* ------------------------------------------------------------------------------
+	 Fancybox
+-------------------------------------------------------------------------------*/
+
+.fancybox-title-float-wrap {
+	margin-bottom: 15px;
+}
+
+.fancybox-title-float-wrap .child {
+	border-radius: 3px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
